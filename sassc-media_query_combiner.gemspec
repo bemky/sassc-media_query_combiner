@@ -6,8 +6,8 @@ require 'sassc/media_query_combiner/version'
 Gem::Specification.new do |gem|
   gem.name          = "sassc-media_query_combiner"
   gem.version       = SassC::MediaQueryCombiner::VERSION
-  gem.authors       = ["Aaron Jensen"]
-  gem.email         = ["aaronjensen@gmail.com"]
+  gem.authors       = ["Aaron Jensen", "Ben Ehmke"]
+  gem.email         = ["aaronjensen@gmail.com", "benehmke@gmail.com"]
   gem.description   = %q{Automatically combine media queries}
   gem.summary       = %q{Sass plugin to combine all like media queries}
   gem.homepage      = ""
