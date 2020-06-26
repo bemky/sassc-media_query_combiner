@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'sass-media_query_combiner'
+require 'sassc-media_query_combiner'
 
 describe "Combiner" do
   let(:sass) { <<SASS }
@@ -43,7 +43,7 @@ b {
     color: black; } }
 CSS
 
-    Sass::Engine.new(sass).render.should == expected_output
+    SassC::Engine.new(sass).render.should == expected_output
   end
 
   it "should work with sourcemaps" do
@@ -71,13 +71,13 @@ b {
 /*# sourceMappingURL=out.css.map */
 CSS
 
-    output, _ = Sass::Engine.new(sass, options).render_with_sourcemap("out.css.map")
+    output, _ = SassC::Engine.new(sass, options).render_with_sourcemap("out.css.map")
     output.should == expected_output
   end
 
   it "should work with debug_info: true" do
     Timeout::timeout(1) do
-      Sass::Engine.new(sass, debug_info: true).render.should == <<CSS
+      SassC::Engine.new(sass, debug_info: true).render.should == <<CSS
 @media -sass-debug-info{filename{}line{font-family:\\000031}}
 h3 {
   color: orange; }

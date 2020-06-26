@@ -1,4 +1,4 @@
-module Sass
+module SassC
   module MediaQueryCombiner
     module Combiner
       def self.combine(css)

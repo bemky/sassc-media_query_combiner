@@ -1,16 +1,6 @@
-# Sass::MediaQueryCombiner
+# SassC::MediaQueryCombiner
 
-[![Gem Version](https://badge.fury.io/rb/sass-media_query_combiner.png)](http://badge.fury.io/rb/sass-media_query_combiner)
-[![Build Status](https://travis-ci.org/aaronjensen/sass-media_query_combiner.png)](https://travis-ci.org/aaronjensen/sass-media_query_combiner)
-[![Coverage Status](https://coveralls.io/repos/aaronjensen/sass-media_query_combiner/badge.png?branch=master)](https://coveralls.io/r/aaronjensen/sass-media_query_combiner)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/aaronjensen/sass-media_query_combiner)
-
-Combines all matching media queries while compiling your Sass.
-
-If you're using
-Rails 3.1+ or Sprockets, you should use [sprockets-media_query_combiner](https://github.com/aaronjensen/sprockets-media_query_combiner).
-
-For node pipelines try [node-css-mqpacker](https://github.com/hail2u/node-css-mqpacker).
+Combines all matching media queries while compiling your SassC.
 
 For example:
 
@@ -71,7 +61,7 @@ Requires Ruby >= 1.9.2.
 
 Add this line to your application's Gemfile:
 
-    gem 'sass-media_query_combiner'
+    gem 'sassc-media_query_combiner'
 
 And then execute:
 
@@ -79,30 +69,19 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sass-media_query_combiner
+    $ gem install sassc-media_query_combiner
 
 ## Usage
 
 In your `config.rb`
 
 ```ruby
-require 'sass-media_query_combiner'
+require 'sassc-media_query_combiner'
 ```
 
-If you're using `sass --watch` do:
+If you're using `sassc --watch` do:
 
 ```bash
-sass --watch -r sass-media_query_combiner
+sassc --watch -r sassc-media_query_combiner
 ```
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aaronjensen/sass-media_query_combiner/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
